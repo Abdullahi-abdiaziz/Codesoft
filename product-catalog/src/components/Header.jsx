@@ -37,22 +37,12 @@ function Header() {
     );
   };
 
-  const handleClick = (event) => {
-    event.target.className === "menu"
-      ? setModel((prev) => !prev)
-      : setModel(false);
-  };
-
   return (
     <div>
       <header>
         <div
           className="menu"
-          onClick={(e) =>
-            e.target.className === "menu"
-              ? setModel((prev) => !prev)
-              : setModel(false)
-          }
+          onClick={(e) => e.target && setModel((prev) => !prev)}
         >
           {modal ? (
             <div className="icon">

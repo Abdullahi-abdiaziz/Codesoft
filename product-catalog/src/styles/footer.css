@@ -1,0 +1,25 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 2rem;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.15);
+  background-color: var(--secondary);
+}
+
+footer .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+.nav > * {
+  font-size: .8rem;
+  color: var(--dark-gray);
+
+}
+
+footer p {
+  font-size: 0.9rem;
+}

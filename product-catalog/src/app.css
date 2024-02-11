@@ -1,0 +1,59 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap"); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap'); */
+/* @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #eeedeb;
+  --secondary: #e0ccbe;
+  --gray: #747264;
+  --dark-gray: #3c3633;
+
+  --color1: #ee9322;
+  --color2: #e9b824;
+  --color3: #d83f31;
+  --color4: #219c90;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Rajdhani", sans-serif;
+  font-family: 16px;
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+body {
+  font-family: 62.5%;
+  background-color: var(--primary);
+  color: var(--dark-gray);
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  all: unset;
+  font-family: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  min-height: calc(100vh - 5.85rem);
+}

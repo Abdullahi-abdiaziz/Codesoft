@@ -1,0 +1,146 @@
+.main-cart {
+  padding: 1rem 3rem;
+}
+
+.main-cart .title,
+.main-cart .total-price {
+  gap: 0.75rem;
+}
+
+.main-cart .title h4,
+.main-cart .total-price h4 {
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-decoration: underline;
+}
+
+.main-cart .title p,
+.main-cart .total-price p {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.main-cart .title span {
+  padding: 0.1rem 0.35rem;
+  /* border-radius: 50%; */
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  color: var(--primary);
+  background-color: var(--color4);
+}
+
+.main-cart .total-price p {
+  background-color: var(--color2);
+  padding: 0.25rem 0.5rem;
+  color: #000;
+}
+
+.cart-box {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  /* border: 2px solid var(--color2); */
+  border-radius: .5rem;
+  gap: 1rem;
+  align-items: flex-start;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.item-image {
+  width: 75px;
+  height: 85px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 85px;
+}
+
+.cart-info h5 {
+  width: 250px;
+}
+
+.cart-info p {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.cart-info p:nth-child(2) {
+  background-color: var(--color1);
+  padding: 0.25rem 0.5rem;
+  margin-block: 0.15rem;
+}
+
+.cart-info p:nth-child(3) {
+  text-transform: uppercase;
+  color: var(--color2);
+}
+
+.cart-box img {
+  width: 50px;
+}
+
+.quantity-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid var(--color2);
+  border-radius: 2rem;
+  padding: 0.25rem 0.6rem;
+}
+
+.cart-quantity p,
+.cart-total p {
+  font-size: 0.9rem;
+}
+
+.cart-total span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  border: 1px solid var(--color4);
+}
+
+.main-cart .icon {
+  cursor: pointer;
+}
+
+.cart-quantity span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.1rem 0.3rem;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85px;
+  gap: 0.5rem;
+}
+.cart-trash {
+  transition: 0.2s all;
+}
+.cart-trash:hover {
+  color: var(--color3);
+  scale: 1.4;
+}
+
+.backward,
+.payment {
+  margin-top: 1rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--color2);
+  background-color: var(--color1);
+  color: var(--dark-gray);
+  text-transform: uppercase;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}

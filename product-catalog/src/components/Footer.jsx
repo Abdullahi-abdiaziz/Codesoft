@@ -20,7 +20,7 @@ function Footer() {
         <FaAngleRight />
         <NavLink to="/cart">Cart</NavLink>
       </nav>
-      <p>Copyright 2024</p>
+      <p>©copyright 2024</p>
     </footer>
   );
 }

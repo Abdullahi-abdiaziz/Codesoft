@@ -51,13 +51,15 @@ export default function Cart() {
             className="cart-box flex-space"
             style={{ alignItems: "center" }}
           >
-            <div className="item-image">
-              <img src={item.image} alt="" />
-            </div>
-            <div className="cart-info">
-              <h5>{item.title.slice(0, 43)}...</h5>
-              <p>${item.price}</p>
-              <p>{item.category}</p>
+            <div className="image-info flex-space">
+              <div className="item-image">
+                <img src={item.image} alt="" />
+              </div>
+              <div className="cart-info">
+                <h5 style={{width:"100%"}}>{item.title.slice(0, 43)}...</h5>
+                <p>${item.price}</p>
+                <p>{item.category}</p>
+              </div>
             </div>
             <div className="cart-quantity">
               <div className="quantity-count">
@@ -92,7 +94,7 @@ export default function Cart() {
           </div>
         ))}
       </div>
-      <div className="flex-space">
+      <div className="btn flex-space">
         <Link to="/products" className="flex-space backward">
           <ImBackward /> Back to Shopping
         </Link>

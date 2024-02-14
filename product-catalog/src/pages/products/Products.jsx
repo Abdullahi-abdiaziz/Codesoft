@@ -67,12 +67,14 @@ const Products = () => {
             {isLoading ? (
               <div>
                 <ShimmerPostItem
+                  key={product.id}
                   card
                   title
                   cta
                   imageType="thumbnail"
                   imageWidth={220}
-                  imageHeight={200}j
+                  imageHeight={200}
+                  j
                   contentCenter
                 />
               </div>

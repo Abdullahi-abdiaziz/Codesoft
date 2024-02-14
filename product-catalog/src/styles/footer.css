@@ -2,9 +2,15 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: .5rem 2rem;
+  padding: .75rem 2rem;
   box-shadow: 1px 1px 10px rgba(0,0,0,0.15);
   background-color: var(--secondary);
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+
+footer svg {
+  scale: .9;
 }
 
 footer .nav {
@@ -12,7 +18,11 @@ footer .nav {
   justify-content: center;
   align-items: center;
   gap: .5rem;
+  margin-top: 0.15rem;
+  font-weight: 500;
 }
+
+
 
 .nav > * {
   font-size: .8rem;
@@ -22,4 +32,11 @@ footer .nav {
 
 footer p {
   font-size: 0.9rem;
+}
+
+@media (max-width: 545px) {
+  footer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

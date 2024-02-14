@@ -1,7 +1,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap"); */
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap'); */
 /* @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 
 :root {
   --primary: #eeedeb;
@@ -14,6 +14,19 @@
   --color3: #d83f31;
   --color4: #219c90;
 }
+
+:root .dark {
+  --primary: #3c3633;
+  --secondary: #47413f;
+  --gray: #b0aea9;
+  --dark-gray: #eeedeb;
+
+  --color1: #d83f31;
+  --color2: #c76823;
+  --color3: #e9b824;
+  --color4: #267e75;
+}
+
 *,
 *::after,
 *::before {
@@ -31,9 +44,13 @@ html {
 
 body {
   font-family: 62.5%;
-  background-color: var(--primary);
+  background-color: #fff;
   color: var(--dark-gray);
 }
+
+/* .dark body {
+  background-color: var(--primary);
+} */
 
 img,
 svg {

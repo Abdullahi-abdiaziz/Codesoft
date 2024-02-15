@@ -71,7 +71,6 @@ function App() {
       <div className="header">
         <img src={todoLogo} alt="" />
       </div>
-      // create a code that defines the colors of the priority list    
       <div className="App">
         <div className="input_box">
           <Input
@@ -81,6 +80,7 @@ function App() {
           />
 
           <SelectPriority
+            // className="priority"
             value={selectedPriority}
             onChange={setSelectedPriority}
           />

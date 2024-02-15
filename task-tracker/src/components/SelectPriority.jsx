@@ -14,8 +14,8 @@ const dot = (color = "transparent") => ({
     content: '" "',
     display: "block",
     marginRight: 8,
-    height: 10,
-    width: 10,
+    height: 7.5,
+    width: 7.5
   },
 });
 
@@ -58,6 +58,7 @@ const colourStyles = {
 
 const SelectPriority = ({ value, onChange }) => (
   <Select
+  className="priority"
     value={value}
     options={colourOptions}
     styles={colourStyles}

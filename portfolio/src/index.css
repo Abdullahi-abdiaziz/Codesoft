@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary: hsl(0, 0%, 0%);
+  --secondary: hsl(240, 6%, 10%);
+  --title: hsl(240, 5%, 96%);
+  --sub-title: hsl(240, 5%, 65%);
+  --border: hsla(240, 5%, 26%, 0.4);
+  --bgHeader: hsl(240, 4%, 16%);
+
+  --blue: hsl(204, 96%, 68%);
+  --accent: hsl(153, 71%, 59%);
+  --invalid: hsl(7, 100%, 68%);
+  --icon-hover: hsl(240, 5%, 84%);
+
+  --container-padding: 4.8rem;
+}
+
+.light {
+  --primary: rgb(250, 250, 250);
+  --secondary: rgb(255, 255, 255);
+  --border: rgba(202, 202, 202, 0.518);
+
+  --title: rgb(39, 39, 42);
+  --sub-title: rgb(82, 82, 91);
+  --bgHeader: rgb(253, 253, 253);
+  --blue: rgb(0, 149, 246);
+
+  --icon-hover: rgb(51, 51, 51);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 1.5px;
+  scroll-behavior: smooth;
+  font-weight: 400;
+}
+
+body {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: var(--secondary);
+  border: 2px solid var(--border);
+  padding: 0 var(--container-padding);
+}
+
+.devider {
+  border-bottom: 1px solid var(--border);
+  margin: 3rem 0;
+
+  width: calc(100% + var(--container-padding) + var(--container-padding));
+
+  margin-left: calc(var(--container-padding) * -1);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  all: unset;
+  transition: 0.2s;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+button {
+  all: unset;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  scale: 0.9;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.border {
+  border: 2px solid red;
+}
+
+/* media queries */
+
+@media (max-width: 600px) {
+  .container {
+    --container-padding: 1.7rem;
+    width: 98%;
+    padding: 0 var(--container-padding);
+  }
+  .devider {
+    width: calc(100% + var(--container-padding) + var(--container-padding));
+
+    margin-left: calc(var(--container-padding) * -1);
+  }
+
+  .scroll2Top {
+    opacity: 0.5;
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  border: 7px solid #292c3b;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+body.light::-webkit-scrollbar-track {
+  border: 7px solid #cecdcd;
+  box-shadow: inset 0 0 2.5px 2px rgba(255, 255, 255, 0.5);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(150deg, #8bfb46, #fbe346);
+  border-radius: 5px;
+}
+
+body.light::-webkit-scrollbar-thumb {
+  background: linear-gradient(150deg, #2526255e, #17150a);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    --container-padding: 2rem;
+    width: 90%;
+    padding: 0 var(--container-padding);
+  }
+  .devider {
+    width: calc(100% + var(--container-padding) + var(--container-padding));
+
+    margin-left: calc(var(--container-padding) * -1);
+  }
+}
+
+.scroll2Top {
+  background-color: rgba(25, 118, 210, 0.85);
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 3%;
+  text-align: center;
+  border: 1px solid hsla(255, 255, 255, 0.2);
+}
+
+.scroll2Top:hover {
+  background-color: rgb(25, 118, 210);
+}

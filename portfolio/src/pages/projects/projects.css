@@ -1,0 +1,170 @@
+/* =================
+  Table of contents
+  ==================
+
+  1. Filter Projects
+  2. Project Cards
+
+*/
+
+main.flex {
+  column-gap: 0.5rem;
+  row-gap: 1.5rem;
+  align-items: start;
+}
+
+/* =================
+   Filter Projects
+  ================== */
+
+main section.project-filter.flex {
+  flex-direction: column;
+  gap: 10px;
+}
+
+main section.project-filter.flex button {
+  background-color: rgba(36, 37, 46, 1);
+  width: 11rem;
+  padding: 0.7rem 0;
+  text-align: center;
+  font-size: 1.05rem;
+  text-transform: capitalize;
+  opacity: 0.5;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+main section.project-filter.flex button:hover {
+  opacity: 1;
+}
+
+main section.project-filter.flex button.active {
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  opacity: 1;
+  padding: 0.8rem 0;
+  border: 1px solid var(--blue);
+}
+
+.light main section.project-filter.flex button.active {
+  border: 1px solid #000;
+}
+
+/* =================
+    Project Cards
+  ================== */
+
+main section.projects.flex {
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  row-gap: 2rem;
+}
+
+.card {
+  border: 1px solid rgba(93, 188, 252, 0.3);
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.16), 1px 1px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  transition: 0.3s;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05)
+  );
+  position: relative;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.light card {
+  border: none;
+}
+
+.card:hover {
+  border: 2px solid var(--blue);
+  rotate: 1deg;
+  scale: 1.01;
+}
+
+.card:hover img{
+  scale: 1.1;
+}
+
+.light .card:hover {
+  background-color: rgb(246, 346, 246);
+  border: none;
+}
+
+.card img {
+  border-radius: 5px 5px 0 0;
+  transition: 0.3s;
+}
+
+.card .box {
+  padding: 1rem 0.4rem;
+}
+
+.card .box .title {
+  color: var(--title);
+  font-size: 1.2rem;
+}
+
+.card .box .subtitle {
+  color: var(--sub-title);
+  font-size: 0.8rem;
+  margin-top: 0.7rem;
+  margin-bottom: 1.1rem;
+}
+
+.card .box .links {
+  justify-content: space-between;
+}
+
+.card .box .links div.flex {
+  gap: 11px;
+}
+
+.card .icon-github,
+.card .icon-link {
+  font-size: 1.2rem;
+  color: var(--sub-title);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card .icon-github:hover,
+.card .icon-link:hover {
+  font-size: 1.25rem;
+  color: var(--icon-hover);
+}
+
+.card a.link {
+  font-size: 0.9rem;
+  color: var(--blue);
+}
+
+.card a.link span {
+  font-size: 0.8rem;
+  margin-left: 4px;
+}
+
+@media (max-width: 600px) {
+  main.flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  main section.project-filter.flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  main section.project-filter.flex button {
+    width: 7rem;
+    padding: 0.8rem 0;
+    font-size: 0.9rem;
+  }
+}

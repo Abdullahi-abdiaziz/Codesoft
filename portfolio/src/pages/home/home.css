@@ -1,0 +1,132 @@
+/* =================
+  Table of contents
+  ==================
+
+  1. Hero Design
+  2. Hero Text -- Right Section
+  3. Hero Image -- Left Section
+  4. Responsive Design (media query)
+
+*/
+
+/* ===================
+    1. Hero Design
+====================== */
+
+.hero {
+  margin-top: 3rem;
+}
+
+/* ===================
+    2. Hero Text
+====================== */
+
+.hero.flex {
+  justify-content: space-between;
+}
+
+.heroText {
+  flex-grow: 1;
+}
+
+.hero .heroAvatar.flex {
+  align-items: end;
+  gap: 0.6rem;
+}
+
+.hero .heroAvatar .avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  border: 1px solid hsla(66, 94%, 49%, 0.68);
+  padding: 1px;
+  box-shadow: 1px 1px 20px hsl(0, 0%, 13%) inset;
+}
+
+.hero .heroAvatar .avatar:hover {
+  border: 1px solid hsl(66, 94%, 49%);
+  box-shadow: 0;
+}
+
+.hero .heroAvatar .verified {
+  font-size: 1.4rem;
+  color: var(--blue);
+  margin-bottom: 0.3rem;
+}
+
+.hero h1.title {
+  font-size: 3rem;
+  line-height: 3.3rem;
+  margin: 24px 0;
+  font-weight: 700;
+  color: var(--title);
+}
+
+.hero p.subtitle {
+  color: var(--sub-title);
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  margin-bottom: 32px;
+}
+
+.hero .icons.flex {
+  font-size: 1.3rem;
+  gap: 1.5rem;
+  color: var(--sub-title);
+}
+
+.about-me.flex {
+  gap: 2rem;
+}
+
+.hero .resume {
+  background-color: var(--blue);
+  color: var(--primary);
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  /* margin-left: ; */
+}
+
+.hero .resume a {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.hero .icons.flex .icon:hover {
+  font-size: 1.4rem;
+  transition: 0.3s;
+  cursor: pointer;
+  color: var(--icon-hover);
+}
+
+/* ============================
+    2. Hero Image => ANIMATION
+=============================== */
+
+.animation {
+  width: 100%;
+  translate: 130px 50px;
+}
+
+@media (max-width: 699px) {
+  .hero h1.title {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .about-me.flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 1250px) {
+  .animation {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  section.contact-us .animation {
+    display: none;
+  }
+}

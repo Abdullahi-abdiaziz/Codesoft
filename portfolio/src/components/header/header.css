@@ -1,0 +1,166 @@
+/* =================
+  Table of contents
+  ==================
+
+  1. Header Design
+  2. Button & Icon
+  3. Modal - pop-up
+  4. Responsive Design (media query)
+
+*/
+
+/* ===================
+    1. Header Design
+====================== */
+
+header.flex {
+  justify-content: space-between;
+  /* padding: 0 2.4rem; */
+  margin-bottom: 2rem;
+}
+
+header button.menu {
+  display: none;
+}
+
+header.flex nav {
+  background-color: var(--bgHeader);
+  padding: 0rem 1.6rem;
+  border-radius: 55px;
+  margin-top: 1.2rem;
+
+  box-shadow: 1px 1px 40px rgba(35, 33, 33, 0.3);
+}
+
+header ul.flex {
+  gap: 16px;
+  padding: 0.67rem 0.35rem;
+}
+
+header ul li a,
+header ul li button {
+  color: var(--title);
+  opacity: 0.7;
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+header ul li a:hover,
+header ul li button:hover {
+  color: var(--blue);
+  opacity: 1;
+  font-size: 0.9rem;
+}
+
+header button {
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+/* =========================
+    2. Icon & Button Design
+============================ */
+
+header .icon-menu,
+header button.mode {
+  background-color: var(--bgHeader);
+  height: 2.4rem;
+  width: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--sub-title);
+  border: 1px solid rgba(244, 165, 96, 0.249);
+  transition: 0.2s;
+}
+header .icon-menu:hover,
+header button.mode:hover {
+  color: var(--title);
+  border: 1px solid rgb(244, 165, 96);
+}
+
+header .icon-close {
+  font-size: 1.5rem;
+  color: var(--sub-title);
+  transition: 0.3s;
+}
+
+header .icon-close:hover {
+  font-size: 1.7rem;
+  color: crimson;
+  rotate: 180deg;
+}
+
+/* ===================
+    3. Modal & pop-up
+====================== */
+
+header .fixed, main .fixed {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(28, 39, 65, 0.905);
+  z-index: 99;
+  /* filter: blur(8px); */
+  backdrop-filter: blur(8px);
+}
+
+@keyframes mymove {
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+header .fixed .modal {
+  animation: mymove 0.7s 1;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--secondary);
+}
+
+header .fixed ul.modal li {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.77rem;
+  padding-top: 0.5rem;
+}
+
+header .fixed ul.modal li:last-child {
+  border: none;
+}
+
+header .fixed ul.modal li:first-child {
+  text-align: right;
+  border-bottom: 0;
+  padding-top: 0.2rem;
+  margin-bottom: -1rem;
+}
+
+header .fixed ul.modal li button {
+  font-size: 1rem;
+  margin-top: .5rem;
+}
+
+/* ===================
+    1. Media Queries
+====================== */
+
+@media (max-width: 700px) {
+  header.flex nav {
+    display: none;
+  }
+
+  header button.menu {
+    display: block;
+  }
+}

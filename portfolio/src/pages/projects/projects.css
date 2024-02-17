@@ -75,7 +75,7 @@ main section.projects.flex {
   );
   position: relative;
   overflow: hidden;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .light card {
@@ -88,7 +88,7 @@ main section.projects.flex {
   scale: 1.01;
 }
 
-.card:hover img{
+.card:hover img {
   scale: 1.1;
 }
 
@@ -166,5 +166,79 @@ main section.projects.flex {
     width: 7rem;
     padding: 0.8rem 0;
     font-size: 0.9rem;
+  }
+}
+/* ========================
+    Detailed Project Cards
+  ========================== */
+
+.detailed {
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+.project-detail,
+.project-img {
+  flex: 1;
+  height: auto;
+}
+
+.project-img img {
+  border: 1px solid var(--accent);
+  width: 550px;
+  max-width: 100%;
+  height: 400px;
+}
+
+.detailed:hover {
+  border: 2px solid var(--blue);
+  rotate: 0deg;
+  scale: 1;
+}
+.project-detail .title {
+  color: var(--title);
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.project-detail .sub-title {
+  color: var(--sub-title);
+  /* width: 90%; */
+  margin-bottom: 1rem;
+  font-size: .9rem;
+  line-height: 1.6;
+}
+
+.project-detail.flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.project-detail .flex {
+  gap: 1.6rem;
+}
+
+.project-detail .btn-link {
+  
+  border-bottom: 1px solid var(--accent);
+  padding: .5rem 1rem;
+  color: var(--title);
+}
+
+.project-detail .flex span {
+  margin-right: 0.75rem;
+}
+
+@media (max-width: 769px) {
+  .detailed {
+    flex-direction: column;
   }
 }

@@ -6,7 +6,7 @@ import Modal from "./Modal";
 
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
-  const lists = ["About", "Articles", "Projects", "Speaking", "Contact"];
+  const lists = ["Home", "Projects", "About", "Contact"];
 
   const [theme, setTheme] = useState(
     localStorage.getItem("currentMode") ?? "dark"

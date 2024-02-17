@@ -20,9 +20,8 @@ textarea:invalid {
 }
 
 .wrapper {
-  width: calc(100% - 2rem);
-
-  margin-inline: auto;
+  padding-inline: 0rem;
+  margin: 0 auto;
 }
 
 /* 600px */
@@ -33,12 +32,19 @@ textarea:invalid {
 }
 
 /* UTILITY */
-.contact {
-  position: relative;
-}
 
 .contact__wrapper {
-  padding-block: 84px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+  /* padding-block: 84px; */
+}
+.contact__text {
+  width: 80%;
+}
+.contact__form {
+  flex: 1;
 }
 
 .contact__headline {
@@ -109,12 +115,15 @@ textarea:invalid {
 .contact__description {
   font-size: 1rem;
   color: var(--title);
+  margin-bottom: 1.6rem;
 }
 
 .contact__form {
   border: 2px solid var(--blue);
   padding: 3rem;
   border-radius: 3rem 0;
+  margin-right: 3rem;
+  flex: 2;
 }
 .contact__control > *::placeholder {
   color: var(--title);
@@ -159,13 +168,17 @@ textarea:invalid {
 
 @media (min-width: 62.5em) {
   .contact__wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 27.8rem);
+    display: flex;
     justify-content: space-between;
+    margin: 0 auto;
   }
 
   .contact__headline {
     margin-block-end: 2rem;
+  }
+
+  .contact__form, .contact__text {
+    flex: 1;
   }
 }
 

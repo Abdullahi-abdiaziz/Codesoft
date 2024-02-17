@@ -39,14 +39,6 @@ const Projects = () => {
         </button>
         <button
           onClick={() => {
-            handleClick("css");
-          }}
-          className={active === "css" ? "active" : null}
-        >
-          HTML & CSS
-        </button>
-        <button
-          onClick={() => {
             handleClick("javascript");
           }}
           className={active === "javascript" ? "active" : null}
@@ -63,11 +55,11 @@ const Projects = () => {
         </button>
         <button
           onClick={() => {
-            handleClick("tailwind");
+            handleClick("api");
           }}
-          className={active === "tailwind" ? "active" : null}
+          className={active === "api" ? "active" : null}
         >
-          Tailwind
+          React API
         </button>
       </section>
       <section className="projects flex">

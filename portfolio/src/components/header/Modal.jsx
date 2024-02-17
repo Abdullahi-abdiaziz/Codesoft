@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 const Modal = ({ setShowModal }) => {
-  const lists = ["About", "Articles", "Projects", "Speaking", "Contact"];
+  const lists = ["Home", "Projects", "About", "Contact"];
 
   return (
     <div className="fixed">

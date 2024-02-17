@@ -22,9 +22,11 @@ const Home = () => {
           Frontend Developer, Programmer, and Self Learner
         </h1>
         <p className="subtitle">
-          I'm Abdullahi Abdiaziz, A frontend Developer espicially JavaScript and
-          it's library React, I make Responsive Atractive Single Page
-          Applications (SPAs);
+          Welcome to my portfolio! I am Abdullahi Abdiaziz, a passionate
+          Frontend Developer with a focus on creating captivating Single Page
+          Applications (SPAs) using JavaScript and the React library. My journey
+          in web development has equipped me with the skills to design and
+          implement responsive and visually appealing user interfaces.
         </p>
         <div className="about-me flex">
           <div className="icons flex">

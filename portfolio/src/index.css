@@ -62,12 +62,12 @@ img {
   background-color: var(--secondary);
   border: 2px solid var(--border);
   padding: 0 var(--container-padding);
+  padding-bottom: 1rem;
 }
 
 .devider {
   border-bottom: 1px solid var(--border);
-  margin: 3rem 0;
-
+  margin-top: 1rem;
   width: calc(100% + var(--container-padding) + var(--container-padding));
 
   margin-left: calc(var(--container-padding) * -1);
@@ -115,6 +115,7 @@ button:active {
     --container-padding: 1.7rem;
     width: 98%;
     padding: 0 var(--container-padding);
+    padding-bottom: 1rem;
   }
   .devider {
     width: calc(100% + var(--container-padding) + var(--container-padding));
@@ -162,6 +163,7 @@ body::-webkit-scrollbar-thumb:hover {
     --container-padding: 2rem;
     width: 90%;
     padding: 0 var(--container-padding);
+    padding-bottom: 1rem;
   }
   .devider {
     width: calc(100% + var(--container-padding) + var(--container-padding));

@@ -6,7 +6,7 @@ import Home from "./pages/home/Home.jsx";
 import Contact from "./pages/contact/Contact.jsx";
 import Projects from "./pages/projects/Projects.jsx";
 import ProjectDetail from "./pages/projects/ProjectDetail.jsx";
-import About from "./pages/about/About.jsx";
+import About from "./pages/about/AboutMe.jsx";
 
 const App = () => {
   return (

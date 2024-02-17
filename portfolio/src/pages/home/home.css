@@ -26,7 +26,8 @@
 }
 
 .heroText {
-  flex-grow: 1;
+  flex-grow: 2;
+  width: 100%;
 }
 
 .hero .heroAvatar.flex {
@@ -67,9 +68,10 @@
   font-size: 0.9rem;
   line-height: 1.7rem;
   margin-bottom: 32px;
+  /* width: 80%; */
 }
 
-.hero .icons.flex {
+.icons.flex {
   font-size: 1.3rem;
   gap: 1.5rem;
   color: var(--sub-title);

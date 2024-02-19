@@ -1,6 +1,42 @@
 const data = [
   {
     id: 1,
+    projectTitle: "React Product Catalog",
+    category: "react",
+    imgPath: "./projects-images/catalog.jpeg",
+    description:
+      "A React Product Catalog application to browse and explore various products.",
+    detailedDisc:
+      "The React Product Catalog is an interactive catalog built using React. Users can explore different products, view details, and filter products based on categories. The project demonstrates React component composition and data handling. Check out the GitHub repository for the complete source code and deploy the app on Vercel to explore it live.",
+    githubLink: "https://github.com/Abdullahi-abdiaziz/Codesoft/tree/main/product-catalog",
+    siteLink: "https://codesoft-product-catalog.vercel.app/",
+  },
+  {
+    id: 2,
+    projectTitle: "React Portfolio",
+    category: "react",
+    imgPath: "./projects-images/personal-portfolio.png",
+    description:
+      "A React Portfolio showcasing skills, projects, and experience.",
+    detailedDisc:
+      "The React Portfolio is a visual representation of my skills and projects built using React. It includes sections highlighting skills, projects, and experience. The clean and responsive design ensures a positive user experience. Explore the GitHub repository for the complete source code and deploy the app on Vercel to explore it live.",
+    githubLink: "https://github.com/Abdullahi-abdiaziz/Codesoft/tree/main/portfolio",
+    siteLink: "https://aboody4dev.vercel.app/",
+  },
+  {
+    id: 3,
+    projectTitle: "React Task Tracker",
+    category: "react",
+    imgPath: "./projects-images/task-tracker.png",
+    description:
+      "A React Task Tracker application to manage and track your tasks efficiently.",
+    detailedDisc:
+      "The React Task Tracker is a simple yet effective task management application built using React. Users can add, delete, and toggle the reminder for each task. The project showcases React state management and component interaction. Explore the GitHub repository for the complete source code and check out the live site deployed on Vercel.",
+    githubLink: "https://github.com/Abdullahi-abdiaziz/Codesoft/tree/main/task-tracker",
+    siteLink: "https://codesoft-omega.vercel.app/",
+  },
+  {
+    id: 4,
     projectTitle: "GitHub User Search",
     category: "api",
     imgPath: "./projects-images/github-search.jpg",
@@ -13,7 +49,7 @@ const data = [
     siteLink: "https://github-search-username-olive.vercel.app/",
   },
   {
-    id: 2,
+    id: 5,
     projectTitle: "Rest Countries",
     category: "api",
     imgPath: "./projects-images/rest-countries.jpg",
@@ -25,7 +61,7 @@ const data = [
     siteLink: "https://rest-countries-api-tau-drab.vercel.app/",
   },
   {
-    id: 3,
+    id: 6,
     projectTitle: "Manage Landing App",
     category: "tailwind",
     imgPath: "./projects-images/manage-landing-page.jpg",
@@ -37,7 +73,7 @@ const data = [
     siteLink: "https://tailwind-manage-landing-three.vercel.app/",
   },
   {
-    id: 4,
+    id: 7,
     projectTitle: "Advice Generator",
     category: "javascript",
     imgPath: "./projects-images/advice-generator.jpg",
@@ -49,7 +85,7 @@ const data = [
     siteLink: "https://advice-generater-api.vercel.app/",
   },
   {
-    id: 5,
+    id: 8,
     projectTitle: "Chirp Analyzer App",
     category: "javascript",
     imgPath: "./projects-images/Chirp_Landing_Page_small.jpg",
@@ -61,7 +97,7 @@ const data = [
     siteLink: "https://chirp-twitter-analyzer.vercel.app/",
   },
   {
-    id: 6,
+    id: 9,
     projectTitle: "Quote Generator",
     category: "javascript",
     imgPath: "./projects-images/quote-generate.png",
@@ -73,7 +109,7 @@ const data = [
     siteLink: "https://quote-generator-livid-tau.vercel.app/",
   },
   {
-    id: 8,
+    id: 10,
     projectTitle: "Joke Generator",
     category: "api",
     imgPath: "./projects-images/joke-generator.jpeg",
@@ -85,7 +121,7 @@ const data = [
     siteLink: "https://joke-generator-api.vercel.app/",
   },
   {
-    id: 18,
+    id: 11,
     projectTitle: "Developer Page",
     category: "react",
     imgPath: "./projects-images/Developer_Landing_Page_small.jpg",

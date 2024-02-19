@@ -27,11 +27,16 @@ main section.project-filter.flex button {
   width: 11rem;
   padding: 0.7rem 0;
   text-align: center;
-  font-size: 1.05rem;
+  font-size: 1rem;
   text-transform: capitalize;
   opacity: 0.5;
   border-radius: 5px;
   transition: 0.3s;
+}
+
+.dark main section.project-filter.flex button {
+  background-color: rgb(237, 238, 248);
+
 }
 
 main section.project-filter.flex button:hover {

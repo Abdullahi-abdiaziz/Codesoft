@@ -20,7 +20,7 @@ This is a React-based personal portfolio showcasing my skills, projects, and exp
 - **React Router:** Enabling smooth navigation within the single-page application.
 - **CSS (with Flexbox/Grid):** Crafting visually appealing and responsive layouts.
 - **Moon icons:** Incorporating stylish icons for enhanced aesthetics.
-- **Lottie files:** Handling the Animation 
+- **Lottie React files:** Handling the Animation 
 
 ## Getting Started
 

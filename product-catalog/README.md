@@ -17,7 +17,7 @@ A feature-rich React product catalog application developed as part of an interns
 ## Demo
 
 Explore a live demo of the application: [React Product Catalog Demo](#)
-
+ 
 [![React Product Catalog Demo](demo-screenshot.png)](#)
 
 ## Features

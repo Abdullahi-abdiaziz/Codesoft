@@ -27,7 +27,7 @@ export default function Hero() {
             <h2>{randomProduct.title}</h2>
             <p>{randomProduct.description}</p>
             <Link to={`products/${randomProduct.id}`}>
-              <button>Buy this</button>
+              <button style={{border: '1px solid var(--color4)',color:"var(--dark-gray)"}}>Buy this</button>
             </Link>
           </div>
           <div className="hero-img">
@@ -50,9 +50,6 @@ export default function Hero() {
           />
         </div>
       )}
-      {/* <div className="hero-img">
-        <ShimmerPostItem card imageWidth={320} />
-      </div> */}
     </main>
   );
 }

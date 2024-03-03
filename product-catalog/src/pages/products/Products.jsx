@@ -10,13 +10,11 @@ const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
 
   useEffect(() => {
-    // setIsLoading(false);
     const filtered =
       selectedCategory === ""
         ? products
         : products.filter((item) => item.category === selectedCategory);
     setFilteredData(filtered);
-    // setIsLoading(true);
   }, [selectedCategory, products]);
 
   const handleCategoryClick = (category) => {
@@ -51,7 +49,7 @@ const Products = () => {
           onClick={() => handleCategoryClick("jewelery")}
           className={selectedCategory === "jewelery" ? "active" : ""}
         >
-          Jewelry
+          Jewelery
         </a>
         <FaAngleRight />
         <a

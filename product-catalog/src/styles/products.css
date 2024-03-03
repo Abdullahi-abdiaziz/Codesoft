@@ -15,12 +15,12 @@
 }
 
 .nav a:hover {
-  color: var(--color1);
+  color: var(--color4);
   cursor: pointer;
 }
 
 .nav a.active {
-  color: var(--color1);
+  color: var(--color4);
   font-weight: 600;
 }
 .products {
@@ -243,7 +243,7 @@
   justify-content: flex-start;
   margin-top: 1rem;
   padding: 0.35rem 0.75rem;
-  border: 1px solid var(--color2);
+  border: 1px solid var(--color4);
   background-color: var(--color1);
   color: var(--dark-gray);
   text-transform: uppercase;

@@ -3,7 +3,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  /* border: 1px solid var(--color4); */
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
   background-color: var(--secondary);
   position: relative;
@@ -17,10 +16,6 @@ header .action {
   position: relative;
 }
 
-header .logo {
-  /* scale: 0.6; */
-}
-
 header .action .cart-count {
   position: absolute;
   width: 14px;
@@ -28,15 +23,14 @@ header .action .cart-count {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color2);
-  color: #000;
+  background-color: var(--color4);
+  color: #fff;
   border-radius: 50%;
   border: 0.5px solid #fff;
-  font-size: 0.5rem;
-  font-weight: 700;
+  font-size: 0.4rem;
+  font-weight: 800;
   top: -6px;
   left: 12px;
-  /* padding: .5rem; */
 }
 
 header .icon {
@@ -79,7 +73,7 @@ header .menu-nav {
 }
 
 .menu-nav a.active {
-  color: var(--color1);
+  color: var(--color4);
   font-weight: 600;
 }
 
@@ -116,6 +110,7 @@ header .menu-nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
 }
 
 .cart-container .checkout {
@@ -134,15 +129,12 @@ header .menu-nav {
 .cart-container .cart-box {
   position: relative;
   padding: 0.5rem 0.75rem;
-  /* width: 120px; */
-  /* height: 120px; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .cart-container .cart-box .item-image {
-  /* width: 100%; */
   border: 1px solid var(--color1);
   border-radius: 4px;
   width: 70px;
@@ -166,7 +158,6 @@ header .menu-nav {
 .cart-container .cart-title {
   margin-bottom: 0.5rem;
   font-weight: 600;
-  /* letter-spacing: 1px; */
 }
 
 .cart-container .cart-price {
@@ -181,6 +172,23 @@ header .menu-nav {
 .cart-container .total {
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.cart-container .trash {
+
+  cursor: pointer;
+  transition: ease-in .3s;
+}
+.cart-container .trash:hover {
+
+  scale: 1.1;
+  color: var(--color3);
+}
+
+.cart-container .checkout {
+
+  border: 1px solid var(--color3);
+  border-radius: 0;
 }
 
 @media (max-width: 769px) {

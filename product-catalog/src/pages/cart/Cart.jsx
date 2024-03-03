@@ -45,6 +45,7 @@ export default function Cart() {
         </div>
       </div>
       <div className="cart-items">
+        {cartItems.length > 0  ? <>
         {cartItems.map((item) => (
           <div
             key={item.id}
@@ -92,7 +93,8 @@ export default function Cart() {
               <FaTrash onClick={() => removeFromCart(item.id)} />
             </div>
           </div>
-        ))}
+        ))}</>
+                 : <h1 className="no-cart-items">No Items In The Cart</h1>}
       </div>
       <div className="btn flex-space">
         <Link to="/products" className="flex-space backward">

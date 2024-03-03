@@ -98,7 +98,7 @@ function Header() {
                       <p className="cart-title">{item.title.slice(0, 40)}...</p>
                       <div className="flex-space">
                         <p className="cart-price">${item.price}</p>
-                        <FaTrash onClick={() => removeFromCart(item.id)} />
+                        <FaTrash onClick={() => removeFromCart(item.id)} className="trash"/>
                       </div>
                     </div>
                   </div>

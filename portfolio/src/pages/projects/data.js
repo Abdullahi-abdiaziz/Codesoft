@@ -1,9 +1,9 @@
 const data = [
   {
     id: 1,
-    projectTitle: "React Product Catalog",
+    projectTitle: "Product Catalog",
     category: "react",
-    imgPath: "./projects-images/catalog.jpeg",
+    imgPath: "./projects-images/catalog.png",
     description:
       "A React Product Catalog application to browse and explore various products.",
     detailedDisc:

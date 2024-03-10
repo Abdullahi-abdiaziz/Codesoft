@@ -1,7 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import data from "./data";
-// import img from "../../../public/projects-images/github-search.jpg";
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -12,7 +11,14 @@ const ProjectDetail = () => {
     return <div>Project not found</div>;
   }
 
-  const { imgPath, projectTitle, detailedDisc, githubLink, siteLink } = project;
+  const {
+    imgPath,
+    projectTitle,
+    detailedDisc,
+    githubLink,
+    siteLink,
+    category,
+  } = project;
 
   return (
     <div className="card detailed">
@@ -24,7 +30,7 @@ const ProjectDetail = () => {
           <p className="title">{projectTitle}</p>
           <p className="sub-title">{detailedDisc}</p>
         </div>
-
+        <div className={`category ${category}`}>{category}</div>
         <div className="flex">
           <div className="btn-link">
             <a href={githubLink} target="_blank">

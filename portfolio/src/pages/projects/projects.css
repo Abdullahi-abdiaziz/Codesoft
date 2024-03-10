@@ -36,7 +36,6 @@ main section.project-filter.flex button {
 
 .dark main section.project-filter.flex button {
   background-color: rgb(237, 238, 248);
-
 }
 
 main section.project-filter.flex button:hover {
@@ -90,11 +89,7 @@ main section.projects.flex {
 .card:hover {
   border: 2px solid var(--blue);
   rotate: 1deg;
-  scale: 1.01;
-}
-
-.card:hover img {
-  scale: 1.1;
+  scale: 1;
 }
 
 .light .card:hover {
@@ -133,15 +128,15 @@ main section.projects.flex {
 
 .card .icon-github,
 .card .icon-link {
-  font-size: 1.2rem;
-  color: var(--sub-title);
+  font-size: 1rem;
+  color: var(--accent);
   cursor: pointer;
   transition: 0.3s;
 }
 
 .card .icon-github:hover,
 .card .icon-link:hover {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: var(--icon-hover);
 }
 
@@ -216,7 +211,7 @@ main section.projects.flex {
   color: var(--sub-title);
   /* width: 90%; */
   margin-bottom: 1rem;
-  font-size: .9rem;
+  font-size: 0.9rem;
   line-height: 1.6;
 }
 
@@ -232,10 +227,40 @@ main section.projects.flex {
 }
 
 .project-detail .btn-link {
-  
-  border-bottom: 1px solid var(--accent);
-  padding: .5rem 1rem;
+  border: 1px solid var(--icon-hover);
+  padding: 0.5rem 0.75rem;
   color: var(--title);
+  border-radius: 5px;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category {
+  margin-bottom: 1rem;
+  padding: .25rem .75rem;
+  border-radius: 5px;
+  font-size: .75rem;
+  font-weight: bold;
+}
+
+.category.api {
+  background-color: rgb(3, 174, 117);
+}
+
+.category.react {
+  background-color: rgb(3, 88, 174);
+}
+
+.category.javascript {
+  background-color: rgb(211, 236, 22);
+}
+
+.category.tailwind {
+  background-color: rgb(192, 22, 144);
 }
 
 .project-detail .flex span {
@@ -245,5 +270,9 @@ main section.projects.flex {
 @media (max-width: 769px) {
   .detailed {
     flex-direction: column;
+  }
+
+  .detailed img {
+    height: 250px;
   }
 }

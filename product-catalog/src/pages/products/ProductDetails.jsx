@@ -9,7 +9,6 @@ import { FaCalculator, FaCartPlus } from "react-icons/fa6";
 import { RiErrorWarningFill } from "react-icons/ri";
 import { ImBackward } from "react-icons/im";
 import { BsFillCartCheckFill } from "react-icons/bs";
-import { TiTick } from "react-icons/ti";
 
 import { useProductContext } from "../../context/ProductContext";
 import { useCartContext } from "../../context/CartContext";
@@ -107,7 +106,10 @@ const ProductDetails = () => {
                 {cartItems.find((item) => item.id === selectedProduct.id) ? (
                   <div
                     className="flex"
-                    style={{ gap: ".25rem", color: "var(--color4)" }}
+                    style={{
+                      gap: ".25rem",
+                      color: "var(--color4)",
+                    }}
                   >
                     <BsFillCartCheckFill /> Added
                   </div>

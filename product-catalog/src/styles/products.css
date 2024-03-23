@@ -260,6 +260,8 @@
 
 .action .cart {
   margin-top: 0;
+  border: 2px solid var(--color4);
+  border-radius: 5px;
 }
 
 @media (max-width: 655px) {
